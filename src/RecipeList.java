@@ -1,3 +1,10 @@
+/**
+ * @author Danindu
+ *Date: 2020 06 12
+ *Desc.: A class for an RecipeList object, that allows the creation and modification of a list of recipes.
+ *Method List: 
+ *		
+ */
 
 public class RecipeList {
 	private Recipe list[];

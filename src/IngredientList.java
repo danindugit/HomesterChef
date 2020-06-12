@@ -1,3 +1,10 @@
+/**
+ * @author Danindu
+ *Date: 2020 06 12
+ *Desc.: A class for an IngredientList object, that allows the creation and modification of a list of ingredients.
+ *Method List: 
+ *		
+ */
 
 public class IngredientList {
 	private Ingredient list[];
