@@ -1,8 +1,10 @@
 
 public class User {
-
+	private IngredientList inventory;
+	private RecipeList recipes;
 	public User() {
-		// TODO Auto-generated constructor stub
+		this.inventory = new IngredientList ();
+		this.recipes = new RecipeList();
 	}
 
 	public static void main(String[] args) {

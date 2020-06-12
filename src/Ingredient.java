@@ -1,8 +1,8 @@
 
 public class Ingredient {
-
+	private int quantity;
 	public Ingredient() {
-		// TODO Auto-generated constructor stub
+		this.quantity = 0;
 	}
 
 	public static void main(String[] args) {
