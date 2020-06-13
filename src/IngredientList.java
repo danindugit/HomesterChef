@@ -131,7 +131,7 @@ public class IngredientList {
 		array[ second ] = hold;
 	}
 	
-	//quicksort method to sort by ingredient name in decsending order
+	//quicksort method to sort by ingredient name in descending order
 		public void nameQuickSort(Ingredient array[], int aMin, int aMax) {
 			Ingredient pivot;
 			int leftPos, rightPos;

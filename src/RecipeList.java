@@ -131,7 +131,7 @@ public class RecipeList {
 		array[ second ] = hold;
 	}
 	
-	//quicksort method to sort by recipe name in decsending order
+	//quicksort method to sort by recipe name in descending order
 		public void nameQuickSort(Recipe array[], int aMin, int aMax) {
 			Recipe pivot;
 			int leftPos, rightPos;
