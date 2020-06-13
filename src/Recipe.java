@@ -58,6 +58,25 @@ public class Recipe {
 	public void setInstructions(String instructions) {
 		this.instructions = instructions;
 	}
+	
+	//a method to check if the user has enough of the right ingredients to make the recipe
+	public boolean compareToInv (User person) {
+		for (int i = 0; i < this.getIngNeeded().getSize(); i++) {//loop through each required ingredient
+			int index = person.getInventory().nameBinarySearch(this.getIngNeeded().getList()[i].getName()); //search for the ingredient in the user's inventory
+			if (index == -1 || person.getInventory().getList()[index].getQuantity()==0) {  //not found or the user has 0 of that ingredient
+				return false;
+			}
+			else {
+				if (this.getIngNeeded().getList()[i].getQuantity()>person.getInventory().getList()[index].getQuantity()) {  //if the required quantity is greater than the user's quantity
+					return false;
+				}
+				else {
+					continue;  //this means that there is no issue with the ingredient that the loop is on right now, so continue to the next
+				}
+			}
+		}
+		return true; //if the loop was completed without returning false, that means the user has the required ingredients
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
