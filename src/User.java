@@ -3,7 +3,15 @@
  *Date: 2020 06 12
  *Desc.: A class for a user object, which includes private data for a user's name, list of ingredients, and list of recipes.
  *Method List: 
- *		
+ *		public User()
+ *		public String getName()
+ *		public void setName(String name)
+ *		public IngredientList getInventory()
+ *		public void setInventory(IngredientList inventory)
+ *		public RecipeList getRecipes()
+ *		public void setRecipes(RecipeList recipes)
+ *		public void makeRecipe(Recipe r) 
+ *		public static void main(String[] args)
  */
 
 public class User {

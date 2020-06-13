@@ -3,7 +3,20 @@
  *Date: 2020 06 12
  *Desc.: A class for an RecipeList object, that allows the creation and modification of a list of recipes.
  *Method List: 
- *		
+ *		public RecipeList()
+ *		public Recipe[] getList()
+ *		public void setList(Recipe[] list)
+ *		public int getMaxSize()
+ *		public void setMaxSize(int maxSize)
+ *		public int getSize()
+ *		public void setSize(int size) 
+ *		public boolean insert (Recipe r)
+ *		public boolean delete (Recipe record) 
+ *		public boolean change (Recipe oldRec, Recipe newRec)
+ *		public int nameBinarySearch (String name) 
+ *		public void swap( Recipe array[], int first, int second )
+ *		public void nameQuickSort(Recipe array[], int aMin, int aMax)
+ *		public static void main(String[] args)
  */
 
 public class RecipeList {

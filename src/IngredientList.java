@@ -3,7 +3,20 @@
  *Date: 2020 06 12
  *Desc.: A class for an IngredientList object, that allows the creation and modification of a list of ingredients.
  *Method List: 
- *		
+ *		public IngredientList()
+ *		public Ingredient[] getList()
+ *		public void setList(Ingredient[] list)
+ *		public int getMaxSize()
+ *		public void setMaxSize(int maxSize)
+ *		public int getSize()
+ *		public void setSize(int size) 
+ *		public boolean insert (Ingredient g)
+ *		public boolean delete (Ingredient record) 
+ *		public boolean change (Ingredient oldRec, Ingredient newRec)
+ *		public int nameBinarySearch (String name) 
+ *		public void swap( Ingredient array[], int first, int second )
+ *		public void nameQuickSort(Ingredient array[], int aMin, int aMax)
+ *		public static void main(String[] args)
  */
 
 public class IngredientList {

@@ -3,7 +3,12 @@
  *Date: 2020 06 12
  *Desc.: A class for an ingredient object, which includes private data such as the quantity and name of the ingredient.
  *Method List: 
- *		
+ *		public Ingredient() 
+ *		public String getName()
+ *		public void setName(String name)
+ *		public int getQuantity()
+ *		public void setQuantity(int quantity) 
+ *		public static void main(String[] args) 
  */
 
 public class Ingredient {
