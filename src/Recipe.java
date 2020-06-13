@@ -8,11 +8,27 @@
  */
 
 public class Recipe {
+	private String name;
 	private IngredientList ingNeeded;
 	private String instructions;
 	public Recipe() {
 		this.ingNeeded = new IngredientList();
 		this.instructions= "";
+		this.setName("");
+	}
+
+	/**
+	 * @return the name
+	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * @param name the name to set
+	 */
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	/**
