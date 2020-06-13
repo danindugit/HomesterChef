@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * @author Danindu
  *Date: 2020 06 12
@@ -84,6 +86,11 @@ public class Recipe {
 			}
 		}
 		return true; //if the loop was completed without returning false, that means the user has the required ingredients
+	}
+
+	@Override
+	public String toString() {
+		return "Recipe [name=" + this.getName() + ", ingNeeded=" + Arrays.toString(this.getIngNeeded().getList()) + ", instructions=" + this.getInstructions() + "]";
 	}
 
 	public static void main(String[] args) {

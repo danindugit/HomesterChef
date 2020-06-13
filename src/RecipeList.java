@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * @author Danindu
  *Date: 2020 06 12
@@ -177,6 +179,11 @@ public class RecipeList {
 			nameQuickSort(array, aMin, rightPos);  // recur with new limits
 			nameQuickSort(array, leftPos, aMax);
 		}//END NAME QUICK SORT
+
+	@Override
+		public String toString() {
+			return "RecipeList [list=" + Arrays.toString(this.getList()) + ", maxSize=" + this.getMaxSize() + ", size=" + this.getSize() + "]";
+		}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

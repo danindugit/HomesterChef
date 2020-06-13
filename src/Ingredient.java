@@ -48,6 +48,11 @@ public class Ingredient {
 		this.quantity = quantity;
 	}
 
+	@Override
+	public String toString() {
+		return "Ingredient [name=" + this.getName() + ", quantity=" + this.getQuantity() + "]";
+	}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 

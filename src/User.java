@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * @author Danindu
  *Date: 2020 06 12
@@ -72,6 +74,11 @@ public class User {
 			int index = this.getInventory().nameBinarySearch(r.getIngNeeded().getList()[i].getName()); //get the index of the ingredient in the user's inventory
 			this.getInventory().getList()[index].setQuantity(this.getInventory().getList()[index].getQuantity()-r.getIngNeeded().getList()[i].getQuantity());  //decrease the ingredient's quantity in the user's inventory based on the quantity required in the recipe
 		}
+	}
+
+	@Override
+	public String toString() {
+		return "User [name=" + this.getName() + ", inventory=" + Arrays.toString(this.getInventory().getList()) + ", recipes=" + Arrays.toString(this.getRecipes().getList()) + "]";
 	}
 
 	public static void main(String[] args) {
