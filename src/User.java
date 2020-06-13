@@ -16,6 +16,48 @@ public class User {
 		this.name = "";
 	}
 
+	/**
+	 * @return the name
+	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * @param name the name to set
+	 */
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	/**
+	 * @return the inventory
+	 */
+	public IngredientList getInventory() {
+		return inventory;
+	}
+
+	/**
+	 * @param inventory the inventory to set
+	 */
+	public void setInventory(IngredientList inventory) {
+		this.inventory = inventory;
+	}
+
+	/**
+	 * @return the recipes
+	 */
+	public RecipeList getRecipes() {
+		return recipes;
+	}
+
+	/**
+	 * @param recipes the recipes to set
+	 */
+	public void setRecipes(RecipeList recipes) {
+		this.recipes = recipes;
+	}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 

@@ -15,6 +15,34 @@ public class Recipe {
 		this.instructions= "";
 	}
 
+	/**
+	 * @return the ingNeeded
+	 */
+	public IngredientList getIngNeeded() {
+		return ingNeeded;
+	}
+
+	/**
+	 * @param ingNeeded the ingNeeded to set
+	 */
+	public void setIngNeeded(IngredientList ingNeeded) {
+		this.ingNeeded = ingNeeded;
+	}
+
+	/**
+	 * @return the instructions
+	 */
+	public String getInstructions() {
+		return instructions;
+	}
+
+	/**
+	 * @param instructions the instructions to set
+	 */
+	public void setInstructions(String instructions) {
+		this.instructions = instructions;
+	}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
