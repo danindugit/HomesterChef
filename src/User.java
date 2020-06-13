@@ -11,9 +11,9 @@ public class User {
 	private IngredientList inventory;
 	private RecipeList recipes;
 	public User() {
-		this.inventory = new IngredientList ();
-		this.recipes = new RecipeList();
-		this.name = "";
+		this.setInventory(new IngredientList ());
+		this.setRecipes(new RecipeList());
+		this.setName("");
 	}
 
 	/**

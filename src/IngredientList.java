@@ -11,9 +11,9 @@ public class IngredientList {
     private int maxSize;
     private int size;
 	public IngredientList() {
-		this.maxSize = 20;
-        this.list  = new Ingredient[maxSize];
-        this.size= 0 ;
+		this.setMaxSize(20);
+        this.setList(new Ingredient[maxSize]);
+        this.setSize(0);
 	}
 
 	/**

@@ -9,9 +9,10 @@
 public class Ingredient {
 	private String name;
 	private int quantity;
+	
 	public Ingredient() {
-		this.name = "";
-		this.quantity = 0;
+		this.setName("");
+		this.setQuantity(0);
 	}
 
 	/**

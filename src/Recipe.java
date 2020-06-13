@@ -12,8 +12,8 @@ public class Recipe {
 	private IngredientList ingNeeded;
 	private String instructions;
 	public Recipe() {
-		this.ingNeeded = new IngredientList();
-		this.instructions= "";
+		this.setIngNeeded(new IngredientList());
+		this.setInstructions("");;
 		this.setName("");
 	}
 
