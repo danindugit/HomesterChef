@@ -40,12 +40,33 @@ public class MenuUI extends JFrame implements ActionListener{
 		btnIng = new JButton ("View Ingredients");
 		btnIng.setBackground(beta);
 		btnIng.setForeground(Color.WHITE);
+		
+		//setting bounds
+		bg.setBounds(0, 0, width, height);
+		btnRecipes.setBounds(70, 225, 150, 50);
+		btnIng.setBounds(280, 225, 150, 50);
+		
+		//adding to the frame
+		add(btnRecipes);
+		add(btnIng);
+		add(bg);
+		
+		// set size and location of frame, making it visible
+		setSize(width,height); 
+		setVisible(true);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
-		
+		if(e.getSource()==btnRecipes) {
+			//RecUI = new RecUI();
+			this.dispose();
+		}
+		else if(e.getSource()==btnIng) {
+			//IngUI = new IngUI();
+			this.dispose();
+		}
 	}
 
 }
