@@ -63,8 +63,8 @@ public class MainUI extends JFrame implements ActionListener{
 	//method that listens to clicks
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource()==btnStart) {
-			//MenuUI ui = new MenuUI();
-			System.exit(0);
+			this.dispose();
+			MenuUI ui = new MenuUI();			
 		}
 		
 	}
