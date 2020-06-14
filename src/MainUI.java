@@ -11,7 +11,6 @@ import javax.swing.JFrame;
  */
 public class MainUI extends JFrame{
 	//private data
-	private User u;
 	private ImagePicture bg;
 	private TextPicture title;
 	private JButton btnStart;
@@ -22,8 +21,14 @@ public class MainUI extends JFrame{
 		//initializing frame width and height
 		width =400;
 		height = 400;
+		
 		//creating ImagePicture and TextPicture
 		bg = new ImagePicture(new ImageIcon("bg.png"));
+		title = new TextPicture ("Welcome to Homester Chef", 180, 50);
+		
+		//creating button
+		btnStart = new JButton ("Start");
+		
 	}
 
 	public static void main(String[] args) {
