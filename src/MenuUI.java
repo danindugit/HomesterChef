@@ -1,9 +1,10 @@
 /**
  * @author Danindu
- *Date: 2020 06 13
+ *Date: 2020 06 14
  *Desc.: A class for the Main GUI
  *Method List: 
- *		
+ *		public MenuUI()
+ *		public void actionPerformed(ActionEvent e)
  */
 
 import java.awt.Color;
