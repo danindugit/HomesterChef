@@ -1,23 +1,21 @@
-import java.util.Arrays;
-
 /**
  * @author Danindu
  *Date: 2020 06 12
  *Desc.: A class for an IngredientList object, that allows the creation and modification of a list of ingredients.
  *Method List: 
- *		public IngredientList()
- *		public Ingredient[] getList()
- *		public void setList(Ingredient[] list)
- *		public int getMaxSize()
- *		public void setMaxSize(int maxSize)
- *		public int getSize()
- *		public void setSize(int size) 
- *		public boolean insert (Ingredient g)
- *		public boolean delete (Ingredient record) 
- *		public boolean change (Ingredient oldRec, Ingredient newRec)
- *		public int nameBinarySearch (String name) 
- *		public void swap( Ingredient array[], int first, int second )
- *		public void nameQuickSort(Ingredient array[], int aMin, int aMax)
+ *		public IngredientList()*
+ *		public Ingredient[] getList()*
+ *		public void setList(Ingredient[] list)*
+ *		public int getMaxSize()*
+ *		public void setMaxSize(int maxSize)*
+ *		public int getSize()*
+ *		public void setSize(int size) *
+ *		public boolean insert (Ingredient g)*
+ *		public boolean delete (Ingredient record) *
+ *		public boolean change (Ingredient oldRec, Ingredient newRec)*
+ *		public int nameBinarySearch (String name) *
+ *		public void swap( Ingredient array[], int first, int second )*
+ *		public void nameQuickSort(Ingredient array[], int aMin, int aMax)*
  *		public static void main(String[] args)
  */
 
@@ -75,7 +73,7 @@ public class IngredientList {
 	
 	//boolean method to insert an ingredient to the ingredient list
 	public boolean insert (Ingredient g) {
-		if (this.getSize()<maxSize) {
+		if (this.getSize()<this.getMaxSize()) {
 			this.getList()[size] = g;  //adding the record to the list at next available index
 			size++;			//increasing the size by 1
 			return true;
@@ -106,7 +104,7 @@ public class IngredientList {
 	public boolean change (Ingredient oldRec, Ingredient newRec) {		
 		int index = this.nameBinarySearch(oldRec.getName());  //searching for old record
 		if(index>=0) { //found
-			list[index] = newRec; //replacing with new record
+			this.getList()[index] = newRec; //replacing with new record
 			this.nameQuickSort(list, 0, size-1);  //sortinf based on first name alphabetical
 			return true;
 		}
@@ -182,7 +180,11 @@ public class IngredientList {
 
 	@Override
 		public String toString() {
-			return "IngredientList [list=" + Arrays.toString(this.getList()) + ", maxSize=" + this.getMaxSize() + ", size=" + this.getSize() + "]";
+			String theList = "";
+			for (int i = 0; i < this.getSize(); i++) {
+				theList += "Ingredient " + (i+1) + ": " + this.getList()[i].toString() + "\n";
+			}
+			return theList;
 		}
 
 	public static void main(String[] args) {

@@ -3,11 +3,12 @@
  *Date: 2020 06 12
  *Desc.: A class for an ingredient object, which includes private data such as the quantity and name of the ingredient.
  *Method List: 
- *		public Ingredient() 
- *		public String getName()
- *		public void setName(String name)
- *		public int getQuantity()
- *		public void setQuantity(int quantity) 
+ *		public Ingredient() *
+ *		public Ingredient(String name, int quantity)*
+ *		public String getName()*
+ *		public void setName(String name)*
+ *		public int getQuantity()*
+ *		public void setQuantity(int quantity) *
  *		public static void main(String[] args) 
  */
 
@@ -18,6 +19,12 @@ public class Ingredient {
 	public Ingredient() {
 		this.setName("");
 		this.setQuantity(0);
+	}
+	//constructor with fields
+	public Ingredient(String name, int quantity) {
+		super();
+		this.name = name;
+		this.quantity = quantity;
 	}
 
 	/**

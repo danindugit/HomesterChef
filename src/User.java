@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 /**
  * @author Danindu
  *Date: 2020 06 12
@@ -141,8 +139,18 @@ public class User {
 		else {
 			System.out.println("You have sufficient ingredients.");
 		}
-		
-		System.out.println("Trying to make recipe 2:");
+		//changing recipe 1 to be sufficient - replacing recSugar1 with recSugar2
+		System.out.println();
+		recIng1.change(recSugar1, recSugar2);
+		System.out.println("Trying to make recipe 1 with changed ingredient requirements:");
+		if (r1.compareToInv(u)==false) {
+			System.out.println("You don't have sufficient ingredients.");
+		}
+		else {
+			System.out.println("You have sufficient ingredients.");
+		}
+
+		System.out.println("\nTrying to make recipe 2:");		
 		if (r2.compareToInv(u)==false) {
 			System.out.println("You don't have sufficient ingredients.");
 		}
@@ -153,6 +161,20 @@ public class User {
 		//displaying the user's final info
 		System.out.println();
 		System.out.println("User's final info:");
+		System.out.println(u.toString());
+
+		//deleting the user's sugar
+		u.inventory.delete(sugar);
+		//displaying the user's final info
+		System.out.println();
+		System.out.println("User's final info after deleting their sugar ingredient:");
+		System.out.println(u.toString());
+
+		//deleting Recipe 2
+		u.recipes.delete(r2);
+		//displaying the user's final info
+		System.out.println();
+		System.out.println("User's final info after deleting Recipe 2:");
 		System.out.println(u.toString());
 	}
 

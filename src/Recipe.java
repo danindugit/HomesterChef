@@ -1,19 +1,17 @@
-import java.util.Arrays;
-
 /**
  * @author Danindu
  *Date: 2020 06 12
  *Desc.: A class for a recipe object, which includes private data for the ingredients needed and the instructions. 
  * This object will also be able to compare if the user has the necessary ingredients for the recipe.
  *Method List: 
- *		public Recipe()
- *		public String getName() 
- *		public void setName(String name)
- *		public IngredientList getIngNeeded()
- *		public void setIngNeeded(IngredientList ingNeeded)
- *		public String getInstructions()
- *		public void setInstructions(String instructions)
- *		public boolean compareToInv (User person)
+ *		public Recipe()*
+ *		public String getName() *
+ *		public void setName(String name)*
+ *		public IngredientList getIngNeeded()*
+ *		public void setIngNeeded(IngredientList ingNeeded)*
+ *		public String getInstructions()*
+ *		public void setInstructions(String instructions)*
+ *		public boolean compareToInv (User person)*
  *		public static void main(String[] args) 
  */
 
@@ -21,6 +19,7 @@ public class Recipe {
 	private String name;
 	private IngredientList ingNeeded;
 	private String instructions;
+	
 	public Recipe() {
 		this.setIngNeeded(new IngredientList());
 		this.setInstructions("");;
@@ -90,7 +89,7 @@ public class Recipe {
 
 	@Override
 	public String toString() {
-		return "Recipe [name=" + this.getName() + ", ingNeeded=" + Arrays.toString(this.getIngNeeded().getList()) + ", instructions=" + this.getInstructions() + "]";
+		return "Recipe [name=" + this.getName() + ", ingNeeded= \n" + this.getIngNeeded().toString() + ", instructions=" + this.getInstructions() + "]";
 	}
 
 	public static void main(String[] args) {
