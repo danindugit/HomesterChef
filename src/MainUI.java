@@ -12,7 +12,9 @@ import javax.swing.JFrame;
  *Date: 2020 06 13
  *Desc.: A class for the Main GUI
  *Method List: 
- *		
+ *		public MainUI()
+ *		public void actionPerformed(ActionEvent e) 
+ *		public static void main(String[] args)		
  */
 public class MainUI extends JFrame implements ActionListener{
 	//private data
